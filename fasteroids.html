@@ -9,6 +9,16 @@
     <script type="text/javascript" src="lib/gameView.js"></script>
   </head>
   <body>
-    Asteroids
+    <canvas id="game-canvas">
+
+    <script>
+      var canvas = document.getElementById('game-canvas');
+      var context = canvas.getContext('2d');
+
+      var game = new Fasteroids.Game();
+      var gameView = new Fasteroids.GameView(game, context);
+
+      gameView.start();
+    </script>
   </body>
 </html>
