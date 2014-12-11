@@ -8,9 +8,21 @@
     <script type="text/javascript" src="lib/game.js"></script>
     <script type="text/javascript" src="lib/gameView.js"></script>
     <script type="text/javascript" src="lib/keymaster.js"></script>
+    <style>
+      canvas {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      div {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <canvas id="game-canvas" width="800" height="600"></canvas>
+    <div>Left and Right arrow keys to turn, Forward and Back arrow keys to increase or decrease thrust, Space Bar to shoot</div>
 
     <script>
       var canvas = document.getElementById('game-canvas');
